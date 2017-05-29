@@ -27,4 +27,32 @@ Desenvolver uma interface de api onde seja possível fazer uma inserção de ven
 
 Crie um fork deste repositório e após finalizado nos envie por email
 
+### Como usar
 
+```
+php artisan migrate --seed
+```
+
+### Requisição
+```
+POST /api/sale
+Content-Type: application/json
+
+{
+  "seller_id": 1,
+  "value": 10000
+}
+```
+Informe o valor da venda em centavos.
+
+### Resposta
+```
+200 OK
+Content-Type: application/json
+
+{
+  "name": "Test",
+  "email": "test@test.com",
+  "commission": "850"
+}
+```
