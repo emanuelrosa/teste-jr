@@ -56,3 +56,4 @@ Content-Type: application/json
   "commission": "850"
 }
 ```
+O valor da comissão está em centavos.
